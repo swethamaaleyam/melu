@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Button</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Click the Button for a Surprise! 🎉</h1>
+    <button onclick="sayHappyBirthday()">Click Me</button>
+    <h2 id="message"></h2>
+
+    <script>
+        function sayHappyBirthday() {
+            document.getElementById("message").innerHTML = "🎂🎈 Happy Birthday! 🎉🎁";
+        }
+    </script>
+
+</body>
+</html>
